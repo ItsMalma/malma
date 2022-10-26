@@ -1,0 +1,148 @@
+@font-face {
+    font-family: Jeko;
+    src: url(/assets/fonts/FontsFree-Net-Jeko-Semi-Bold.ttf);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100vh;
+}
+
+body {
+    min-height: 100vh;
+}
+
+.root {
+    min-height: 100vh;
+
+    display: grid;
+}
+
+.root .header {
+    min-width: 100vw;
+    background-color: black;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.header h1.header-title {
+    font-family: Jeko;
+    font-size: 500%;
+    color: white;
+    text-align: center;
+
+    animation: fadeIn 1s;
+}
+
+.header h1.header-title:hover {
+    cursor: pointer;
+}
+
+.header p.header-description {
+    font-family: Jeko;
+    font-size: 140%;
+    color: white;
+    text-align: center;
+}
+
+.root .main {
+    padding: 5%;
+
+    background-color: whitesmoke;
+}
+
+.main .mastered-technologies-section {
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+.mastered-technologies-section p.mastered-technologies-section-text {
+    font-family: Arial;
+    font-size: 140%;
+    text-align: center;
+}
+
+.mastered-technologies-section .mastered-technologies {
+    padding: 2% 6%;
+}
+
+.mastered-technologies .mastered-technology {
+    border: 1px solid lightgray;
+    border-radius: 7px;
+    background-color: white;
+
+    display: grid;
+    grid-template-columns: 20% 80%;
+    justify-content: center;
+    align-items: center;
+
+    padding: 3%;
+}
+
+.mastered-technologies .mastered-technology img.mastered-technology-icon {
+    width: 80%;
+    height: 80%;
+}
+
+.mastered-technologies .mastered-technology img.mastered-technology-icon:hover {
+    transform: scale(1.2);
+}
+
+.mastered-technologies .mastered-technology div.mastered-technology-description {
+    display: block;
+
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+.mastered-technologies .mastered-technology div.mastered-technology-description h3.mastered-technology-name {
+    font-family: Jeko;
+    font-size: 120%;
+    margin-bottom: 1%;
+}
+
+.mastered-technologies .mastered-technology div.mastered-technology-description p.mastered-technology-text {
+    font-family: Arial;
+    font-size: 100%;
+}
+
+footer {
+    background: black;
+    padding: 1%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+footer .social-media-links {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .social-media-links .social-media-link {
+    margin: 0 1%;
+}
